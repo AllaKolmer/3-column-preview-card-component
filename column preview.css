@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+}
+.first-block {
+    background: #e38826;
+    width: 300px;
+    height: 480px;
+    display: flex;
+    border-radius: 10px 0 0 10px;
+    padding: 40px 40px 40px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+h1 {
+    color: #f2f2f2;
+    font-family: "Big Shoulders", sans-serif;
+    margin-top: 30px;
+}
+p {
+    color: #ffffffbf;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+button {
+    width: 120px;
+    height: 40px;
+    margin-top: auto;
+    border-radius: 20px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+}
+.first-click {
+    color: #e38826;
+    
+}
+.first-click:hover {
+    color: #f2f2f2;
+    border: solid 2px #f2f2f2;
+    background-color: #e38826;
+    cursor: pointer;
+}
+.second-block {
+    background: #006970;
+    width: 300px;
+    height: 480px;
+    display: flex;
+    padding: 40px 40px 40px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.second-click {
+    color: #006970;
+}
+.second-click:hover {
+    color: #f2f2f2;
+    border: solid 2px #f2f2f2;
+    background-color: #006970;
+    cursor: pointer;
+}
+.third-block {
+    background: #004241;
+    width: 300px;
+    height: 480px;
+    display: flex;
+    border-radius: 0 10px 10px 0;
+    padding: 40px 40px 40px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.third-click {
+    color: #004241;
+}
+.third-click:hover {
+    color: #f2f2f2;
+    border: solid 2px #f2f2f2;
+    background-color: #004241;
+    cursor: pointer;
+}
