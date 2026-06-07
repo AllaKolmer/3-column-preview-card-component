@@ -92,3 +92,6 @@ button {
     background-color: #004241;
     cursor: pointer;
 }
+@media (max-width:1200px) {
+
+}
