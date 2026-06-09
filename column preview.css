@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -15,11 +15,11 @@ body {
 }
 .first-block {
     background: #e38826;
-    width: 300px;
-    height: 480px;
+    width: 100%;
+    max-width: 300px;
     display: flex;
     border-radius: 10px 0 0 10px;
-    padding: 40px 40px 40px 40px;
+    padding: 2.5rem;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -27,25 +27,25 @@ body {
 h1 {
     color: #f2f2f2;
     font-family: "Big Shoulders", sans-serif;
-    margin-top: 30px;
+    margin-top: 1.875rem;
+}
+p, button {
+    font-family: "Lexend Deca", sans-serif;
 }
 p {
     color: #ffffffbf;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 button {
-    width: 120px;
+    min-width: 120px;
     height: 40px;
-    margin-top: auto;
+    margin-top: 4rem;
     border-radius: 20px;
     border: none;
-    font-family: "Lexend Deca", sans-serif;
 }
 .first-click {
-    color: #e38826;
-    
+    color: #e38826; 
 }
 .first-click:hover {
     color: #f2f2f2;
@@ -55,10 +55,10 @@ button {
 }
 .second-block {
     background: #006970;
-    width: 300px;
-    height: 480px;
+    width: 100%;
+    max-width: 300px;
     display: flex;
-    padding: 40px 40px 40px 40px;
+    padding: 2.5rem;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -74,11 +74,11 @@ button {
 }
 .third-block {
     background: #004241;
-    width: 300px;
-    height: 480px;
+    width: 100%;
+    max-width: 300px;
     display: flex;
     border-radius: 0 10px 10px 0;
-    padding: 40px 40px 40px 40px;
+    padding: 2.5rem;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -92,6 +92,16 @@ button {
     background-color: #004241;
     cursor: pointer;
 }
-@media (max-width:1200px) {
-
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 3rem 0 3rem 0;
+    }
+    .first-block {
+        border-radius: 10px 10px 0 0;
+    }
+    .third-block {
+        border-radius: 0 0 10px 10px;
+    }
 }
